@@ -138,9 +138,12 @@ CREATE TABLE `pedidos` (
   `data` varchar(45) NOT NULL,
   `valor total do pedido` varchar(45) NOT NULL,
   `clientes_id` int NOT NULL,
+  `endereço_id` int NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `FK_produto_cliente_idx` (`clientes_id`),
-  CONSTRAINT `FK_produto_cliente` FOREIGN KEY (`clientes_id`) REFERENCES `clientes` (`ID`)
+  KEY `FK_produto_e_idx` (`clientes_id`),
+  CONSTRAINT `FK_produto_cliente` FOREIGN KEY (`clientes_id`) REFERENCES `clientes` (`ID`),
+  KEY `FK_produto_endereço_idx` (`clientes_id`),
+  CONSTRAINT `FK_produto_endereço` FOREIGN KEY (`endereço_id`) REFERENCES `endereços` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
