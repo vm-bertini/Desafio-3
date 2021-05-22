@@ -7,11 +7,11 @@ INSERT INTO `desafio_3`.`clientes` (`Nome`, `E-mail`, `Whatsapp`, `Senha`) VALUE
 INSERT INTO `desafio_3`.`cidade_estado` (`cidade`, `estado`) VALUES ('São Paulo', 'SP');
 INSERT INTO `desafio_3`.`cidade_estado` (`cidade`, `estado`) VALUES ('Sorocaba', 'SP');
 -- inserção de dados dos endereços
-INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Carlos Weber', '457', 'apto 61 b', '05303-000', 'Vila Leopoldina', 'residêncial', '1', '1');
+INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Carlos Weber', '457', 'apto 61 b', '05303-000', 'Vila Leopoldina', 'residencial', '1', '1');
 INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('avenida', 'Paulista', '900', '01310-100', 'Bela Vista', 'comercial', '3', '1');
-INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Carlos Weber', '457', 'apto 61 b', '05303-000', 'Vila Leopoldina', 'residêncial', '2', '1');
+INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Carlos Weber', '457', 'apto 61 b', '05303-000', 'Vila Leopoldina', 'residencial', '2', '1');
 INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('avenida', 'Sorocaba', '500', '18044-390', 'Jardim Magnolia', 'comercial', '1', '2');
-INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Mergenthaler', '345', 'apto 102A', '05311-030', 'Vila Leopoldina', 'residêncial', '4', '1');
+INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Mergenthaler', '345', 'apto 102A', '05311-030', 'Vila Leopoldina', 'residencial', '4', '1');
 -- inserção de dados dos pedidos
 INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('RL-100', '30/04/2021', '9500', '2', '3');
 INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('CR-200', '16/05/2021', '1500', '1', '4');
