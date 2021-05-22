@@ -135,7 +135,7 @@ DROP TABLE IF EXISTS `pedidos`;
 CREATE TABLE `pedidos` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `código` varchar(45) NOT NULL,
-  `data` varchar(45) NOT NULL,
+  `data` DATETIME NOT NULL,
   `valor total do pedido` varchar(45) NOT NULL,
   `clientes_id` int NOT NULL,
   `endereço_id` int NOT NULL,
