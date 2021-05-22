@@ -31,7 +31,7 @@ group by departamentos.nome
 ;
 
 
--- Achar todos os clientes, seus endereços, e quantidade de produtos comprados desde o dia 25/04/2021 
+-- Achar todos os clientes, seus endereços, e quantidade de produtos comprados e entregues desde o dia 25/04/2021 
 select clientes.Nome,
 endereços.`Tipo de Logradouro`, endereços.Logradouro, endereços.cep, 
 endereços.bairro, endereços.tipo, sum(itens.quantidade) as "quantidade total de produtos"
