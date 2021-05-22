@@ -13,10 +13,10 @@ INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `núme
 INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('avenida', 'Sorocaba', '500', '18044-390', 'Jardim Magnolia', 'comercial', '1', '2');
 INSERT INTO `desafio_3`.`endereços` (`Tipo de Logradouro`, `Logradouro`, `número`, `complemento`, `cep`, `bairro`, `Tipo`, `cliente_id`, `cidade_estado_id`) VALUES ('rua', 'Mergenthaler', '345', 'apto 102A', '05311-030', 'Vila Leopoldina', 'residêncial', '4', '1');
 -- inserção de dados dos pedidos
-INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`) VALUES ('RL-100', '30/04/2021', '9500', '2');
-INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`) VALUES ('CR-200', '16/05/2021', '1500', '1');
-INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`) VALUES ('JA-000', '20/04/2021', '7500', '3');
-INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`) VALUES ('JO-300', '17/05/2021', '7500', '4');
+INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('RL-100', '30/04/2021', '9500', '2', '3');
+INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('CR-200', '16/05/2021', '1500', '1', '4');
+INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('JA-000', '20/04/2021', '7500', '3', '2');
+INSERT INTO `desafio_3`.`pedidos` (`código`, `data`, `valor total do pedido`, `clientes_id`, `endereço_id`) VALUES ('JO-300', '17/05/2021', '7500', '4', '5');
 -- inserção de dados dos pedidos_status
 INSERT INTO `desafio_3`.`pedidos_status` (`data_mudança_status`, `status`, `pedidos_id`) VALUES ('2021-04-20 20:10:00', 'novo pedido', '3');
 INSERT INTO `desafio_3`.`pedidos_status` (`data_mudança_status`, `status`, `pedidos_id`) VALUES ('2021-04-20 20:10:23', 'aguardando pagamento', '3');
